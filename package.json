@@ -1,11 +1,11 @@
 {
   "name": "pinyinToneNumToMark",
+  "version": "1.0",
   "description": "Converts pinyin tone numbers to unicode pinyin tone marks",
   "author": "JasonL888 <lauwtj@yahoo.com>",
   "repository": {
   	"url": "https://github.com/JasonL888/pinyinToneNumToMark"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "engine": "node >= 0.4.1"
 }
