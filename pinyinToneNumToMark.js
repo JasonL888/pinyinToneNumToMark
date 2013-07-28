@@ -107,4 +107,4 @@ function pinyinToneNumToMark( str )
 	return( retStr );
 }
 
-module.exports = pinyinToneNumToMark;
+module.exports.pinyinToneNumToMark = pinyinToneNumToMark;
