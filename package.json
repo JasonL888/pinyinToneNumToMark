@@ -4,8 +4,10 @@
   "description": "Converts pinyin tone numbers to unicode pinyin tone marks",
   "author": "JasonL888 <lauwtj@yahoo.com>",
   "repository": {
-  	"url": "https://github.com/JasonL888/pinyinToneNumToMark"
+  	"url": "https://github.com/JasonL888/pinyinToneNumToMark.git"
   },
+  "url": "https://github.com/JasonL888/pinyinToneNumToMark",
+  "main": "./pinyinToneNumToMark",
   "dependencies": {},
   "engine": "node >= 0.4.1"
 }
