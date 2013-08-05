@@ -34,7 +34,7 @@ function getPos (token) {
 	}
 	var u = token.indexOf('u');
 	var i = token.indexOf('i');
-	if ( i>=0 && i>=0 )
+	if ( i>=0 && u>=0 )
 	{
 		if (i < u){
 		    // -iu OR u-only case, accent goes to u
@@ -43,14 +43,20 @@ function getPos (token) {
 		    // -ui OR i-only case, accent goes to i
 		    return i;
 		}
-	}
-	else
-	{
-		// the only vowel left is ü
-		var ü = token.indexOf('ü');
-		if (ü >= 0){
-		    return ü;
-		}
+	}	
+ 	if ( i>= 0 )
+ 	{
+ 		// -i without u
+ 		return i;
+ 	}
+ 	if ( u>= 0 )
+ 	{
+ 		// -u withou i
+ 		return u;
+ 	}
+	var ü = token.indexOf('ü');
+	if (ü >= 0){
+	    return ü;
 	}
 }
 
